@@ -189,46 +189,13 @@ nlp_studio/
 ├── requirements.txt
 └── .env                # Your keys (not committed)
 ```
-
-## ☁️ Deploy on Streamlit Community Cloud
-
-1. Push the repository to GitHub (without `.env`).
-2. On [share.streamlit.io](https://share.streamlit.io), create a new app pointing to `app.py`.
-3. Under **Advanced settings → Secrets**, add your keys:
-
-   ```toml
-   GEMINI_API_KEY = "your_gemini_key"
-   GROQ_API_KEY = "your_groq_key"
-   DEEPL_API_KEY = "your_deepl_key:fx"
-   HF_TOKEN = "your_hf_token"
-   ```
-
-4. Deploy. If you push code changes and the app behaves oddly or runs low on memory, use **Manage app → Reboot** to start from a clean process.
-
-## ⚠️ Known limitations
-
-- **Scanned PDFs** (images of text) aren't read. The app warns you and asks for a searchable PDF or pasted text.
-- **Old Office formats** (`.doc`, `.ppt`, `.xls`) aren't supported. Save them as `.docx`, `.pptx` or `.xlsx` first.
-- **Free-tier quotas** apply to Gemini, Groq and DeepL. When one runs out, the app falls back where it can and explains what happened.
-- **NLLB-200 is licensed CC-BY-NC**, which means non-commercial use only. This affects only the local translation fallback.
-
-## 💡 Ideas for the future
+## Ideas for the future
 
 - [ ] OCR support for scanned PDFs
 - [ ] Export results as PDF or Word reports
 - [ ] Compare two documents side by side
 - [ ] More translation languages and entity presets
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 [Hugging Face](https://huggingface.co/) · [Cardiff NLP](https://huggingface.co/cardiffnlp) · [Prosus AI (FinBERT)](https://huggingface.co/ProsusAI/finbert) · [GLiNER](https://github.com/urchade/GLiNER) · [Meta AI (NLLB-200)](https://ai.meta.com/research/no-language-left-behind/) · [Google Gemini](https://ai.google.dev/) · [Groq](https://groq.com/) · [DeepL](https://www.deepl.com/) · [Streamlit](https://streamlit.io/)
-
-## 📄 License
-
-Add your license here (for example MIT) and place a `LICENSE` file in the repository root.
-
-## 👤 Author
-
-**Basant** · [GitHub](https://github.com/basant1896)
-
-If this project helped you, consider giving it a ⭐
