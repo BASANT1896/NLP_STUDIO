@@ -21,7 +21,7 @@
 ---
 
 <!-- Add a screenshot or GIF: save it as docs/screenshot.png and uncomment the line below -->
-<!-- ![NLP Studio screenshot](docs/screenshot.png) -->
+-- ![NLP Studio screenshot](docs/screenshot.png) --
 
 ## ✨ Features
 
